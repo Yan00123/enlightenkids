@@ -1,0 +1,317 @@
+
+/*Home Page*/
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 26px 26px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: cursive;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #2565AE;
+  color: white;
+}
+p1{
+  font-family: arial black;
+  font-size: 52px;
+  padding-left: 15px;
+}
+h{
+  font-size: 58px;
+  font-family: arial black;
+  color: white;
+}
+body{
+  background-image: url("homebg.png");
+}
+.tagline{
+  text-align: center;
+  padding-top: 10%;
+	font-size: 80px;
+  font-family: cursive;
+  font-style: italic;
+}
+.container1 {
+  padding: 16px;
+}
+.column {
+  float: left;
+  padding-left: 60px;
+}
+.row{
+  margin-left: 21%;
+  margin-top: 60px;
+}
+
+/*Login Page*/
+
+.logo {
+    width: 213px;
+    height: 36px;
+    margin: 30px auto;
+    padding-top: 3%;
+}
+
+.login-block {
+    width: 500px;
+    height: 400px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid blue;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 60px 0 100px;
+    outline: none;
+}
+
+.login-block input#email {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#email:focus {
+    background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid #ff656c;
+}
+
+.login-block button {
+    width: 100%;
+    height: 50px;
+    background: blue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #2565AE;
+}
+.signup{
+  font-size: 20px;
+  font-family: arial;
+}
+
+/*Register Page*/
+
+  input[type=text1], input[type=password1] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text1]:focus, input[type=password1]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container11 {
+  padding: 500px;
+  padding-top: 3%;
+  padding-bottom: 50px;
+  font-family: arial;
+  font-size: 25px;
+}
+.container11 h1{
+  font-size: 60px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+label{
+  font-size: 22px;
+}
+.box{
+  width: 500px;
+  height: 600px;
+  padding: 0px 100px 120px;
+  background: #fff;
+  border-radius: 5px;
+  border-top: 5px solid blue;
+  margin: 0 auto;
+}
+
+/*Left Nav*/
+
+.sidenav{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 10.4%;
+  left: 8px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a{
+  padding: 10px 8px 10px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: cursive;
+}
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+.sidenav a.active{
+  color: white;
+}
+.main{
+  margin-left: 200px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+/*toys category page*/
+
+.column1 {
+  float: left;
+  padding-left: 60px;
+  margin-bottom: 2%;
+}
+.category1{
+  margin-left: 16%;
+  margin-top: 2.5%;
+}
+.column1 p{
+  font-size: 25px;
+  font-family: arial;
+  padding-top: 0%;
+  margin-top: 0%;
+  text-align: center;
+}
+
+/*Catalogue page*/
+
+.category2{
+  margin-left: 10%;
+  margin-top: 4%;
+}
+.column2 {
+  float: left;
+  padding-left: 60px;
+  margin-bottom: 8%;
+}
+.column2 p{
+  font-size: 23px;
+  font-family: arial;
+  padding-top: 0%;
+  margin-top: 0%;
+  text-align: center;
+  font-weight: bolder;
+}
+.column2 button{
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  background-color: red;
+  margin-top: 0%;
+}
+.column2 button:hover{
+  background-color: grey;
+}
+.sidenavtitle{
+  font-family: cursive;
+  font-weight: 800;
+  float: left;
+  font-size: 32px;
+}
+.sidenavtitle p{
+  padding-bottom: 688%;
+  margin-top: 38%;
+}

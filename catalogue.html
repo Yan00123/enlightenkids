@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+<body>
+     <link rel = "stylesheet" type="text/css" href="stylesheet.css" />
+
+<h1>
+  <div class="topnav">
+    <p1>ENLIGHTEN KIDS</p1>
+  <a class="active" href="catalogue.html">Catalogue & Cart</a>
+  <a href="register.html">Register</a>
+  <a href="login.html">Login</a>
+  <a href="home.html">Home</a>
+</div>
+
+<style>
+.container{
+  top: 168.2%;
+  left: 39%;
+  transform:translate(-50%,-50%);
+  position: absolute;
+  width: max-content;
+}
+.card{
+  border: 1px solid black;
+  width: max-content;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+  font-family: arial;
+  font-size: 25px;
+}
+.card img{
+  width: 300px;
+  padding: 5px;
+}
+.title{
+  font-weight: bold;
+  margin: 20px;
+}
+.container button{
+  border: 20px solid red;
+  background: red;
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  padding: 5px 10px;
+  height: 60px;
+  width: 50%;
+  font-size: 16px;
+}
+.container button:hover{
+  box-shadow: 0 0 5px 5px red inset;
+}
+.cart{
+  width: 400px;
+  height: 70%;
+  float: right;
+  text-align: center;
+  border: 1px solid black;
+  overflow-y: scroll;
+  margin-top: 4.6%;
+  font-family: arial;
+  font-size: 25px;
+}
+.cart img{
+  width: 300px;
+  padding: 5px;
+}
+</style>
+
+<script>
+  var addItemId = 0;
+  function addToCart(item){
+    addItemId += 1;
+    var selectedItem = document.createElement('div');
+    selectedItem.classList.add('cartImg');
+    selectedItem.setAttribute('id',addItemId);
+    var img = document.createElement('img');
+    img.setAttribute('src',item.children[0].currentSrc);
+    var title = document.createElement('div');
+    title.innerText = item.children[1].innerText;
+    var delBtn = document.createElement('button');
+    delBtn.innerText = 'Delete';
+    delBtn.setAttribute('onclick','del('+addItemId+')');
+    var cartItems = document.getElementById('title');
+    selectedItem.append(img);
+    selectedItem.append(title);
+    selectedItem.append(delBtn);
+    cartItems.append(selectedItem);
+  }
+  function del(item){
+    document.getElementById(item).remove();
+  }
+</script>
+
+<div class="container">
+  <div class="card" id="item1">
+  <img src="ball1.jpeg">
+  <div class="title">Toy Story Ball</div>
+  <p>P65</p>
+  <button onclick="addToCart(item1)">Add To Cart</button>
+  </div>
+  <div class="card" id="item2">
+  <img src="ball2.jpeg">
+  <div class="title">Plastic Ball</div>
+  <p>P50</p>
+  <button onclick="addToCart(item2)">Add To Cart</button>
+</div>
+  <div class="card" id="item3">
+  <img src="ball3.jpeg">
+  <div class="title">Soft Ball</div>
+  <p>P70</p>
+  <button onclick="addToCart(item3)">Add To Cart</button>
+ </div>
+ <div class="card" id="item4">
+ <img src="ball4.jpeg">
+ <div class="title">Water Ball</div>
+ <p>P100</p>
+ <button onclick="addToCart(item4)">Add To Cart</button>
+</div>
+
+<hr/>
+
+ <div class="card" id="item5">
+ <img src="block1.jpeg">
+ <div class="title">Creative Blocks</div>
+ <p>P150</p>
+ <button onclick="addToCart(item5)">Add To Cart</button>
+ </div>
+ <div class="card" id="item6">
+ <img src="block2.jpeg">
+ <div class="title">Building Blocks 1</div>
+ <p>P98</p>
+ <button onclick="addToCart(item6)">Add To Cart</button>
+</div>
+ <div class="card" id="item7">
+ <img src="block3.jpeg">
+ <div class="title">Block Set</div>
+ <p>P95</p>
+ <button onclick="addToCart(item7)">Add To Cart</button>
+</div>
+<div class="card" id="item8">
+<img src="block4.jpeg">
+<div class="title">Soft Blocks 1</div>
+<p>P90</p>
+<button onclick="addToCart(item8)">Add To Cart</button>
+</div>
+
+<hr/>
+
+<div class="card" id="item9">
+<img src="doll1.jpg">
+<div class="title">Doll for Toddlers</div>
+<p>P180</p>
+<button onclick="addToCart(item9)">Add To Cart</button>
+</div>
+<div class="card" id="item10">
+<img src="doll2.jpeg">
+<div class="title">Lalaloopsy Doll</div>
+<p>P210</p>
+<button onclick="addToCart(item10)">Add To Cart</button>
+</div>
+<div class="card" id="item11">
+<img src="doll3.jpeg">
+<div class="title">Baby Doll Toy</div>
+<p>P240</p>
+<button onclick="addToCart(item11)">Add To Cart</button>
+</div>
+<div class="card" id="item12">
+<img src="doll4.jpeg">
+<div class="title">Baby Doll</div>
+<p>P170</p>
+<button onclick="addToCart(item12)">Add To Cart</button>
+</div>
+
+<hr/>
+
+<div class="card" id="item13">
+<img src="stuff1.jpeg">
+<div class="title">Pikachu Plushie</div>
+<p>P89</p>
+<button onclick="addToCart(item13)">Add To Cart</button>
+</div>
+<div class="card" id="item14">
+<img src="stuff2.jpeg">
+<div class="title">Baby Yoda Plushie</div>
+<p>P97</p>
+<button onclick="addToCart(item14)">Add To Cart</button>
+</div>
+<div class="card" id="item15">
+<img src="stuff3.jpeg">
+<div class="title">Tom Stuffed Toy</div>
+<p>P90</p>
+<button onclick="addToCart(item15)">Add To Cart</button>
+</div>
+<div class="card" id="item16">
+<img src="stuff4.jpeg">
+<div class="title">Jerry Stuffed Toy</div>
+<p>P90</p>
+<button onclick="addToCart(item16)">Add To Cart</button>
+</div>
+
+<hr/>
+
+<div class="card" id="item17">
+<img src="wheel1.jpeg">
+<div class="title">Car Toy w/ Disco Ball</div>
+<p>P105</p>
+<button onclick="addToCart(item17)">Add To Cart</button>
+</div>
+<div class="card" id="item18">
+<img src="wheel2.jpeg">
+<div class="title">Ambulance Kids Toy</div>
+<p>P89</p>
+<button onclick="addToCart(item18)">Add To Cart</button>
+</div>
+<div class="card" id="item19">
+<img src="wheel3.jpeg">
+<div class="title">Kids Go Cart Ride On</div>
+<p>P200</p>
+<button onclick="addToCart(item19)">Add To Cart</button>
+</div>
+<div class="card" id="item20">
+<img src="wheel4.jpeg">
+<div class="title">Buggy Metal Car Toy</div>
+<p>P210</p>
+<button onclick="addToCart(item20)">Add To Cart</button>
+</div>
+
+</div>
+
+<div class="cart" id="cart">
+  <div class="title">CART</div><hr/>
+  <div id="title"></div>
+</div>
+
+</body>
+</html>
